@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Portal</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <button id="toggle-mode">Dark Mode</button>
+    <div class="login-box">
+        <p>Student Registration Portal</p>
+        <form id="registration-form" action="/submit_registration" method="POST">
+          <div class="user-box">
+            <input required name="student_name" type="text" id="student_name">
+            <label for="student_name">Name</label>
+          </div>
+          <div class="user-box">
+            <input required name="batch_name" type="text" id="batch_name">
+            <label for="batch_name">Batch Name</label>
+          </div>
+          <div class="user-box">
+            <input required name="student_id" type="text" id="student_id">
+            <label for="student_id">ID</label>
+          </div>
+          <div class="user-box">
+            <input required name="payment_amount" type="number" id="payment_amount">
+            <label for="payment_amount">Payment Amount</label>
+          </div>
+          <button type="submit">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Submit
+          </button>
+        </form>
+        <p id="success-message" style="display: none; color: green;">Registration successful!</p>
+        <p>Make sure all information is given correctly. <a href="#" class="a2">required!</a></p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
